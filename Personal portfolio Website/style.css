@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(157, 155, 155);
+    width: 300px;
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transform: translateX(-100%);
+    /* Initially hide the sidebar */
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.sidebar.active {
+    transform: translateX(0);
+    /* Show the sidebar */
+    display: block;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: dodgerblue;
+}
+
+.sidebar ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.hamburger-icon {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: 500;
+}
+
+.hamburger-icon {
+    color: dodgerblue;
+}
+
+.sidebar.active+.hamburger-icon {
+    background-color: rgb(157, 155, 155);
+    /* Match the sidebar background */
+    color: #fff;
+    /* Make the icon color white */
+
+}
+
+.sidebar.active .hamburger-icon {
+    visibility: hidden;
+    /* You can hide the hamburger icon if you don't want it visible when the sidebar is active */
+}
+
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    /* background-color: yellow ; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.infoContainer {
+    /* background-color: rgb(196, 22, 150); */
+    height: 58vh;
+    width: 80vw;
+    margin: 9rem auto;
+    display: flex;
+    margin-left: 5rem;
+    justify-content: space-around;
+    padding-left: 120px;
+  
+
+}
+h3{
+    font-family: "Source Code Pro", monospace;
+     
+}
+
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+    
+
+}
+
+
+.hello {
+    font-size: 55px;
+
+}
+
+
+.name {
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+
+
+}
+
+
+.about {
+    font-size: 40px;
+}
+
+
+.moreabout {
+    font-size: 15px;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+
+.devPic img {
+    height: 75vh;
+    width: auto;
+    align-items: center;
+    
+
+
+}
+
+
+/* contact from section start */
+
+
+
+.contactform {
+
+    padding: 144px 0 34px 34px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.contactform h1 {
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+}
+
+.email {
+
+    padding-top: 10px;
+
+}
+
+
+/* blog page style */
+
+
+.blogItem {
+    margin: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+
+.blogContainer h1 {
+
+    margin: 23px;
+
+}
+
+.blogItem p {
+    font-family: "Source Code Pro", monospace;
+}
+
+.blogItem button {
+    /* margin: 10px;  */
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: grey;
+}
+
+
+
+
+/* My intro page */
+
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+.intro{
+    padding-left: 100px;
+    width: 100%;
+    align-items: center;
+}
+.intro h2 {
+    margin: 12px;
+    font-family: "Fira Sans", sans-serif;
+    padding-left: 30px;
+}
+
+.intro p {
+    font-family: "Source Code Pro", monospace;
+    margin: 12px;
+    padding-left: 100px;
+}
+
+.skillContainer {
+    padding: 12px;
+
+    
+}
+
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.html{
+    width: 100%;
+    animation-delay: 1s;
+}
+
+.skill-per.css{
+    width: 100%;
+    animation-delay: 1.5s;
+}
+
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 2s;
+}
+
+.skill-per.nodejs{
+    width: 30%;
+    animation-delay: 2.5s; 
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    /* z-index: 0; */
+}
+
+.tooltip::before{
+
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+
+
